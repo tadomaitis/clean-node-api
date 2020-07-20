@@ -2,7 +2,27 @@
   "name": "clean-node-api",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/tadomaitis/clean-node-api.git",
+  "reository": "https://github.com/tadomaitis/clean-node-api.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "standard --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "author": "Thiago Adomaitis <t.d.adomaitis@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "lint-staged": "^10.2.11",
+    "standard": "^14.3.4"
+  }
 }
