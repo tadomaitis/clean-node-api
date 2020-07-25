@@ -4,7 +4,8 @@
   "main": "index.js",
   "reository": "https://github.com/tadomaitis/clean-node-api.git",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:staget": "jest"
   },
   "standard": {
     "env":["jest"]
