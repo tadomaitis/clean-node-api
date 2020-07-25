@@ -5,7 +5,7 @@
   "reository": "https://github.com/tadomaitis/clean-node-api.git",
   "scripts": {
     "test": "jest --watchAll",
-    "test:staget": "jest"
+    "test:staged": "jest"
   },
   "standard": {
     "env":["jest"]
