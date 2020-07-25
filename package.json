@@ -6,6 +6,9 @@
   "scripts": {
     "test": "jest"
   },
+  "standard": {
+    "env":["jest"]
+  },
   "author": "Thiago Adomaitis <t.d.adomaitis@gmail.com>",
   "license": "MIT",
   "devDependencies": {
