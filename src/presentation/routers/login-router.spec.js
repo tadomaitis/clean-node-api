@@ -7,11 +7,11 @@ const makeSut = () => {
     auth (email, password) {
       this.email = email
       this.password = password
-      return this.acessToken
+      return this.accessToken
     }
   }
   const authUseCaseSpy = new AuthUseCaseSpy()
-  authUseCaseSpy.acessToken = 'valid_token'
+  authUseCaseSpy.accessToken = 'valid_token'
   const sut = new LoginRouter(authUseCaseSpy)
   return { sut, authUseCaseSpy }
 }
@@ -71,7 +71,7 @@ describe('Login Router', () => {
   // to access the resource requested
   test('Should return 401 when invalid credentials are provided', () => {
     const { sut, authUseCaseSpy } = makeSut()
-    authUseCaseSpy.acessToken = null
+    authUseCaseSpy.accessToken = null
     const httpRequest = {
       body: {
         email: 'invalid_email@mail.com',
