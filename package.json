@@ -5,7 +5,8 @@
   "reository": "https://github.com/tadomaitis/clean-node-api.git",
   "scripts": {
     "test": "jest --watch --silent --verbose --colors",
-    "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace"
+    "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace",
+    "test:ci": "jest --coverage"
   },
   "standard": {
     "env":["jest"]
