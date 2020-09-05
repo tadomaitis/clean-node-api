@@ -50,7 +50,7 @@ describe('Auth UseCase', () => {
     )
   })
 
-  test('Should return null if LoadUserByEmailRepository returns null', async () => {
+  test('Should return null if an invalid email is provided', async () => {
     const { sut } = makeSut()
     const accessToken = await sut.auth('invalid_email@mail.com', 'any_password')
     expect(accessToken).toBe(null)
