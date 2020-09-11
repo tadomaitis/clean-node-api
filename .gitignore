@@ -1,3 +1,4 @@
 node_modules/
 coverage
-.vscodeglobalConfig.json
+.vscode
+globalConfig.json
