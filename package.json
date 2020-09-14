@@ -1,7 +1,7 @@
 {
   "name": "clean-node-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/main/index.js",
   "reository": "https://github.com/tadomaitis/clean-node-api.git",
   "scripts": {
     "test": "jest --silent --colors --noStackTrace --passWithNoTests",
@@ -11,9 +11,7 @@
     "test:ci": "yarn test --coverage"
   },
   "standard": {
-    "env": [
-      "jest"
-    ]
+    "env": ["jest"]
   },
   "author": "Thiago Adomaitis <t.d.adomaitis@gmail.com>",
   "license": "MIT",
@@ -26,6 +24,7 @@
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
+    "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.6.1",
     "validator": "^13.1.1"
