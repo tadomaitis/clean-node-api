@@ -1,4 +1,4 @@
-const MongoHelper = require('../helpers/mongo-helpers')
+const MongoHelper = require('../helpers/mongo-helper')
 const LoadUserByEmailRepository = require('./load-user-by-email-repository')
 const MissingParamamError = require('../../utils/errors/missing-param-error')
 let db
