@@ -2,3 +2,4 @@ globalConfig.json
 node_modules/
 coverage
 .vscode
+.env
