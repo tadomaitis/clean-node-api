@@ -5,8 +5,8 @@
   "reository": "https://github.com/tadomaitis/clean-node-api.git",
   "scripts": {
     "start": "node src/main/index.js",
-    "test": "jest --silent --colors --noStackTrace --passWithNoTests",
-    "test:unit": "yarn test --watchAll -c jest-unit-config.js",
+    "test": "jest --silent --colors --noStackTrace --passWithNoTests --runInBand",
+    "test:unit": "yarn test --watch -c jest-unit-config.js",
     "test:integration": "yarn test --watch -c jest-integration-config.js",
     "test:staged": "yarn test --findRelatedTests",
     "test:ci": "yarn test --coverage"
