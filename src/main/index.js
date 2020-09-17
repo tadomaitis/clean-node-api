@@ -1,9 +1,10 @@
-require('dotenv').config()
+// require('dotenv').config()
+const env = require('./config/env')
 
 const MongoHelper = require('../infra/helpers/mongo-helper')
 
-const port = process.env.PORT
-const db = process.env.MONGODB
+const port = env.port
+const db = env.mongoUrl
 
 MongoHelper.connect(db)
   .then(() => {
