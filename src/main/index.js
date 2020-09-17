@@ -1,4 +1,3 @@
-// require('dotenv').config()
 const env = require('./config/env')
 
 const MongoHelper = require('../infra/helpers/mongo-helper')
@@ -11,7 +10,7 @@ MongoHelper.connect(db)
     const app = require('./config/app')
 
     app.listen(port, () => {
-      console.log(`Server Running on port ${port}...`)
+      console.log(`Server Running on http://localhost:${port}...`)
     })
   })
   .catch(console.error)
