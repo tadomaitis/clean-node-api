@@ -2,7 +2,7 @@
   "name": "clean-node-api",
   "version": "1.0.0",
   "main": "src/main/index.js",
-  "reository": "https://github.com/tadomaitis/clean-node-api.git",
+  "repository": "https://github.com/tadomaitis/clean-node-api.git",
   "scripts": {
     "start": "node src/main/index.js",
     "test": "jest --silent --colors --noStackTrace --passWithNoTests --runInBand",
