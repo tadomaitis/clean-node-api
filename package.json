@@ -5,7 +5,7 @@
   "repository": "https://github.com/tadomaitis/clean-node-api.git",
   "scripts": {
     "start": "node src/main/index.js",
-    "test": "jest --silent --colors --noStackTrace --passWithNoTests --runInBand",
+    "test": "jest --colors --noStackTrace --passWithNoTests --runInBand",
     "test:unit": "yarn test --watch -c jest-unit-config.js",
     "test:integration": "yarn test --watch -c jest-integration-config.js",
     "test:staged": "yarn test --findRelatedTests",
@@ -19,20 +19,20 @@
   "author": "Thiago Adomaitis <t.d.adomaitis@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@shelf/jest-mongodb": "^1.2.3",
-    "husky": "^4.2.5",
-    "jest": "^26.1.0",
-    "lint-staged": "^10.2.11",
-    "standard": "^14.3.4",
-    "supertest": "^4.0.2"
+    "@shelf/jest-mongodb": "2.2.0",
+    "husky": "7.0.4",
+    "jest": "27.4.7",
+    "lint-staged": "12.1.5",
+    "standard": "16.0.4",
+    "supertest": "6.1.6"
   },
   "dependencies": {
     "bcrypt": "5.0.1",
-    "dotenv": "^8.2.0",
+    "dotenv": "10.0.0",
     "express": "4.17.2",
     "fast-glob": "3.2.7",
     "jsonwebtoken": "^8.5.1",
-    "mongodb": "^3.6.1",
+    "mongodb": "4.2.2",
     "validator": "^13.7.0"
   }
 }

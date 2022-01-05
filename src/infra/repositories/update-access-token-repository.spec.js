@@ -22,7 +22,7 @@ describe('UpdateAccessToken Repository', () => {
       state: 'any_state',
       password: 'hashed_password'
     })
-    fakeUserId = fakeUser.ops[0]._id
+    fakeUserId = fakeUser.insertedId
   })
 
   afterAll(async () => {
@@ -32,8 +32,8 @@ describe('UpdateAccessToken Repository', () => {
   test('Should update the user with given accessToken', async () => {
     const sut = makeSut()
     await sut.update(fakeUserId, 'valid_token')
-    const updateFakeUser = await userModel.findOne({ _id: fakeUserId })
-    expect(updateFakeUser.accessToken).toBe('valid_token')
+    const updatedFakeUser = await userModel.findOne({ _id: fakeUserId })
+    expect(updatedFakeUser.accessToken).toBe('valid_token')
   })
 
   test('Should throw if no params are provided', async () => {
