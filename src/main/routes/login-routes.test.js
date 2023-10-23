@@ -31,12 +31,12 @@ describe('Login Routes', () => {
       }).expect(200)
   })
 
-  test('Should return 401 when valid credentials are provided', async () => {
+  test('Should return 401 when invalid credentials are provided', async () => {
     await request(app)
       .post('/api/login')
       .send({
-        email: 'valid_email@mail.com',
-        password: 'hashed_password'
+        email: 'invalid_email@mail.com',
+        password: 'invalid_password'
       }).expect(401)
   })
 })
