@@ -116,7 +116,7 @@ describe('Auth UseCase', () => {
     expect(promise).rejects.toThrow(new MissingParamError('email'))
   })
 
-  test('Should throw if no email is provided', async () => {
+  test('Should throw if no password is provided', async () => {
     const { sut } = makeSut()
     const promise = sut.auth('any_email.com')
     expect(promise).rejects.toThrow(new MissingParamError('password'))
